@@ -52,6 +52,7 @@
             text-align: center;
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
             position: relative;
+            z-index: 2;
         }
 
         /* Live Indicator Badge */
@@ -207,6 +208,9 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
             margin-bottom: 15px;
+            cursor: pointer;
+            position: relative;
+            z-index: 10;
         }
 
         .subscribe-btn:hover {
@@ -270,7 +274,7 @@
             </div>
         </div>
 
-        <!-- Community Activity Bars (Fixed Upar-Neeche Heights & Colors) -->
+        <!-- Community Activity Bars -->
         <div class="activity-box">
             <div class="activity-header">
                 <i class="fas fa-chart-line" style="color: #38bdf8;"></i> Community Activity
@@ -286,8 +290,8 @@
             </div>
         </div>
 
-        <!-- CTA Button with Working Telegram Link -->
-        <a href="https://t.me/+AQuvMqsY-nViZTA9" class="subscribe-btn">
+        <!-- CTA Button with Javascript Click Handler -->
+        <a href="https://t.me/+AQuvMqsY-nViZTA9" target="_blank" class="subscribe-btn" onclick="window.location.href='https://t.me/+AQuvMqsY-nViZTA9'; return true;">
             <i class="fas fa-rocket"></i> Join Today's VIP Room
             <span class="btn-subtext">Instant Access To Premium Community</span>
         </a>
